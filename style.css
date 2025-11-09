@@ -16,7 +16,7 @@ body {
 }
 
 /* Boxes */
-#numbers, #letters {
+#numbers, #lettersGame {
     background: white;
     width: 350px;
     padding: 25px;
@@ -60,16 +60,18 @@ button:hover {
 }
 
 /* Word game */
-#word {
-    font-size: 32px;
-    letter-spacing: 10px;
+  #word {
+    font-size: 2em;
+    letter-spacing: 0.3em;
     margin: 20px 0;
-    font-weight: bold;
-}
-
-#message {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #4a90e2;
-    font-weight: 500;
-}
+  }
+  #letters button {
+    margin: 4px;
+    padding: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+  #letters button:disabled {
+    background: #000000;
+    cursor: not-allowed;
+  }
